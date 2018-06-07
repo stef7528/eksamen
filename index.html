@@ -14,10 +14,14 @@
 <body>
     <!-- Navigation -->
 
+
     <nav>
         <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li class="dropdown"><a href="#">Portfolie</a>
+            <li class="menuitem"><a href="index.html">Forside</a></li>
+
+            <li class="menuitem"> <a href="cv.html">CV</a></li>
+
+            <li class="dropdown menuitem"><a href="#">Portfolio</a>
                 <ul class="dropdown-content">
                     <li><a href="animation.html">Animation</a></li>
                     <li><a href="arts_and_crafts.html">Arts and Crafts</a></li>
@@ -27,29 +31,45 @@
                 </ul>
             </li>
 
-            <li class="dropdown"><a href="#">CV</a>
-                <ul class="dropdown-content">
-                    <li><a href="bmc.html">Business Model Canvas</a></li>
-                    <li><a href="experiencemap.html">Experience Map</a></li>
-                    <li><a href="brugerrejser_storyboards.html">Brugerrejser og storyboards</a></li>
-                </ul>
-            </li>
+
+
 
         </ul>
     </nav>
 
+    <div id="logoet">
+        <img src="logo-01.png" alt="logo" class="logo">
 
+    </div>
 
     <!----- Sidens indhold ------>
 
     <div class="indhold">
 
+        <div id="ommig">
+            <h3>Stefani Arsovic</h3>
+            <p>Velkommen til min hjemmeside. Her kan du finde mit CV og Portfolio med de ting jeg har lavet på 1 semester. </p>
 
-        <h1>Stefani Arsovic</h1>
+        </div>
 
+        <div id="slide">
+            <img class="autoslide" src="privat.png">
+            <img class="autoslide" src="joe.png">
+
+        </div>
+
+        <script src="java.js"></script>
 
 
     </div>
+
+
+
+
+    <!-- footer -->
+
+    <!-- indhold slut -->
+
 
     <div class="bottom">
         <a href="https://www.facebook.com/stefani.arsovic">
@@ -60,10 +80,6 @@
         </a>
 
     </div>
-
-
-    <!-- footer -->
-    <hr>
     <footer>
         <div class="footer">
             <p>Dette site er lavet som et studieprojekt på KEA af Stefani Arsovic</p>

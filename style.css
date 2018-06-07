@@ -1,29 +1,11 @@
-* {
-    box-sizing: border-box;
-}
-
-/*
 img {
     width: 100%;
 }
-*/
 
-nav ul img {
-    width: 50px;
-    height: 50px
-}
 
 /* Basis styles */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-    background-color: #ffff;
-}
-
 body {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -31,33 +13,40 @@ body {
 
 nav ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
     list-style: none;
-    padding-left: 10;
-    background-color: rgba(252, 204, 232, 0.88);
+    padding: px;
+
 
 }
 
 nav ul li {
     position: relative;
-    padding-right: 0.3em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     display: block;
+
+
+}
+
+nav ul .menuitem {
+    background-color: #fac7e5;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 nav li:hover {
-    background-color: rgba(255, 135, 61, 0.26);
+    background-color: #f892ce;
 }
 
 .dropdown > ul {
     display: none;
     position: absolute;
-    background-color: rgba(250, 246, 246, 0.94);
+    background-color: #fac7e5;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
     z-index: 1;
     padding: 1em;
+    margin: 0em 0em;
 
 }
 
@@ -70,14 +59,14 @@ nav li:hover {
 
 .dropdown:hover > ul {
     display: block;
-    background-color: rgba(255, 187, 226, 0.96);
+    background-color: #ffb7e1;
 
 }
 
 a {
     color: #f2f1f1;
     text-align: center;
-    padding: 14px 16px;
+    padding: 6px 26px;
     text-decoration: none;
     font-size: 1.3em;
 }
@@ -100,12 +89,11 @@ a {
     padding: 0 30px 1px;
     margin: 0 auto;
     max-width: 1200px;
-    max-width: 900px;
     position: relative;
 }
 
+
 .footer {
-    text-align: center;
     color: rgb(255, 159, 214);
 }
 
@@ -153,5 +141,136 @@ a {
 
 .bottom {
     background-color: rgba(252, 204, 232, 0.88);
-    padding-top: 42px;
+    padding-top: 20px;
+    margin-top: 180px;
+
 }
+
+.bottom img {
+    width: 30px;
+    margin: 0 -50px 0 0;
+}
+
+#mitcv {
+    margin: 50px auto 50px auto;
+    width: 650px;
+}
+
+#mitcv .cv {
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+#logoet .logo {
+    margin: 0 auto 0 auto;
+    display: block;
+    width: 600px;
+}
+
+#cv {}
+
+#cv p {
+    font-size: 0.9em;
+}
+
+#cv ul {
+    font-size: 0.8em;
+}
+
+#cv h3,
+#cv h4 {
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'BioRhyme Expanded', serif;
+
+}
+
+#cv h3 {
+    background-color: #f8d9d7;
+}
+
+#cv h4 {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+#cv .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px 120px;
+    padding-top: 80px;
+
+
+}
+
+#cv .column {
+    flex-basis: 250px;
+    flex-grow: 1;
+    background-color: #f8d9d7;
+    padding: 110px 50px 150px 30px;
+
+
+}
+
+#cv .column_1 {
+    flex-basis: 220px;
+    flex-grow: 1;
+    margin: 0 55px 55px 55px;
+}
+
+#cv .column_content,
+#cv .column_content1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+#cv .top1 {}
+
+#cv .billede {
+    width: 300px;
+    margin-left: 150px;
+}
+
+#cv .billede1 {
+    width: 200px;
+    display: block;
+    margin: 0 auto 0 auto;
+
+}
+
+#cv #kompetencer {
+    margin: 60px 0 0 0;
+}
+
+#slide .autoslide {
+    width: 400px;
+    margin-left: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+}
+
+#slide {
+    background-color: rgba(255, 232, 230, 0.62);
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin-left: 550px;
+
+
+}
+
+#ommig {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4em;
+}
+
+
+
