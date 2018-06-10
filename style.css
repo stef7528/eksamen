@@ -7,6 +7,7 @@ img {
 
 body {
     margin: 0 auto;
+    max-width: 1400px;
 }
 
 /*---------- Navigation -----------*/
@@ -16,7 +17,7 @@ nav ul {
     justify-content: center;
     flex-direction: row;
     list-style: none;
-    padding: px;
+    padding: 0px;
 
 
 }
@@ -33,6 +34,7 @@ nav ul .menuitem {
     background-color: #fac7e5;
     margin: 10px;
     border-radius: 10px;
+    display: block;
 }
 
 nav li:hover {
@@ -74,12 +76,109 @@ a {
 
 /**----------- Media Q ------------------**/
 
-@media screen and (max-width:1040px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width:750px) {
+    .logo {
+
+        max-width: 310px;
+        padding-left: 9vw;
+        display: block;
+        justify-content: center;
+
+
     }
 }
+
+@media screen and (max-width:750px) {
+    .nav ul {
+
+        max-width: 60px;
+
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    nav ul .menuitem {
+
+        max-width: 118px;
+        margin: 1vw;
+        margin-bottom: 0vw;
+
+
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .nav li:hover {
+
+        max-width: 20px;
+
+    }
+}
+
+@media screen and (max-width:750px) {
+    .dropdown > ul {
+
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .dropdown > ul li {
+
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    li,
+    a {
+        margin-left: 5.1vw;
+        padding-left: 0vw;
+
+    }
+}
+
+@media screen and (max-width:750px) {
+    div.example,
+    h3 {
+
+        font-size: 8px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .autoslide {
+
+        max-width: 200px;
+        margin-right: 50px;
+
+    }
+}
+
+@media screen and (max-width:750px) {
+    div .example,
+    p {
+
+        font-size: 40px;
+        max-width: 750px;
+        margin-left: 40px;
+        margin-right: -60px;
+        line-height: 25px;
+        margin-top: -50px;
+        margin-bottom: 10vw;
+
+
+    }
+}
+
+
+
+
+
 
 
 /*---------- Indhold ---------*/
@@ -101,21 +200,31 @@ a {
 /*---- skrifttyper osv. ------*/
 
 h1 {
-    font-family: 'Kohinoor Bangla', monospace;
-    font-size: 3.2em;
+    font-family: 'Kohinoor Bangla', sans-serif;
+    font-size: 3em;
     font-weight: lighter;
+    margin-bottom: 0;
 }
 
 h2 {
     font-family: 'Kohinoor Bangla', sans-serif;
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: lighter;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-family: 'Kohinoor Bangla', sans-serif;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin-bottom: 0;
 }
 
 h3 {
     font-family: 'Kohinoor Bangla', sans-serif;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: lighter;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -127,28 +236,36 @@ h4 {
 
 
 p {
-    font-family: 'Kohinoor Bangla', sans-serif;
-    font-size: 1.3em;
-    font-weight: lighter;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
 }
 
 li,
 a {
     font-family: 'Kohinoor Bangla', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: lighter;
+
 }
 
-.bottom {
+.footer {
     background-color: rgba(252, 204, 232, 0.88);
-    padding-top: 20px;
-    margin-top: 180px;
+    padding-top: 10px;
+    margin-top: 160px;
 
 }
 
-.bottom img {
-    width: 30px;
-    margin: 0 -50px 0 0;
+.footer img {
+    width: 50px;
+    margin: 0 -60px 0 0;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: -2vw;
 }
 
 #mitcv {
@@ -162,46 +279,63 @@ a {
 }
 
 #logoet .logo {
-    margin: 0 auto 0 auto;
+    margin: 0 35.5vw 30vw auto;
     display: block;
-    width: 600px;
+    width: 450px;
+}
+
+.example h3 {
+    text-align: center;
+    margin-top: -30vw;
+    font-size: 2.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    color: #e0cae3
 }
 
 #cv {}
 
 #cv p {
     font-size: 0.9em;
+    font-family: 'Lato', sans-serif;
+
 }
 
 #cv ul {
     font-size: 0.8em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 #cv h3,
 #cv h4 {
     font-size: 22px;
-    font-weight: normal;
-    font-family: 'BioRhyme Expanded', serif;
+    font-family: 'Lato', sans-serif;
+
+
 
 }
 
 #cv h3 {
     background-color: #f8d9d7;
+
 }
 
 #cv h4 {
     background-color: #3c3c3c;
     color: #ffffff;
     margin-top: 60px;
+
 }
 
 #cv .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 70px 120px;
-    padding-top: 80px;
-
-
+    margin-top: -17vw
 }
 
 #cv .column {
@@ -210,13 +344,13 @@ a {
     background-color: #f8d9d7;
     padding: 110px 50px 150px 30px;
 
-
 }
 
 #cv .column_1 {
     flex-basis: 220px;
     flex-grow: 1;
     margin: 0 55px 55px 55px;
+
 }
 
 #cv .column_content,
@@ -224,34 +358,51 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+
 }
 
 
 
-#cv .top1 {}
+#cv .top1 {
+    flex-direction: column;
+    flex-wrap: wrap;
 
-#cv .billede {
+}
+
+.billede {
     width: 300px;
     margin-left: 150px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 6vw;
+
 }
 
 #cv .billede1 {
     width: 200px;
     display: block;
     margin: 0 auto 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
 #cv #kompetencer {
-    margin: 60px 0 0 0;
+    margin: 60px 50px 70px 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
 }
 
 #slide .autoslide {
     width: 400px;
-    margin-left: 100px;
+    margin-left: 50px;
     padding-top: 60px;
     padding-bottom: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 
 }
@@ -260,17 +411,569 @@ a {
     background-color: rgba(255, 232, 230, 0.62);
     flex-basis: 200px;
     flex-grow: 1;
-    margin-left: 550px;
+    flex-wrap: wrap;
+    margin-top: 5vw;
 
 
 }
 
-#ommig {
+#om {}
 
+#om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 4em;
+    flex-direction: row;
+
+
+}
+
+
+#om .column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin-left: 2vw;
+    margin-right: 8vw;
+    margin-bottom: 10vw;
+
+
+}
+
+#om .column1 {
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin-left: 2vw;
+    margin-right: 8vw;
+    margin-top: 20vw;
+    max-width: 1400px
+}
+
+#example .column1 p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.7;
+
+}
+
+
+.joejuice {
+    max-width: 350px;
+    display: block;
+    line-height: 1.5vw;
+    margin-left: 37.2vw;
+    margin-top: 2vw;
+
+}
+
+#joe h1 {
+    color: #f2a4d2;
+    font-weight: normal;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 5vw;
+
+}
+
+#cphdox .dox {
+
+    margin: 5vw 25vw 12vw 28vw;
+    display: block
+}
+
+#keaapp .ikon {
+    display: block;
+    max-width: 300px;
+    margin-left: 40%;
+
+}
+
+#keaapp h1 {
+    margin-top: 5vw;
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: normal;
+    color: green;
+}
+
+#keaapp p {
+    text-align: center;
+    line-height: 2.2vw;
+    margin-top: 6vw;
+    display: block;
+    color: green;
+}
+
+
+.p11 p {
+    text-align: center;
+    line-height: 2.2vw;
+    display: block;
+    font-weight: 400;
+    margin-top: 3vw;
+    color: green;
+}
+
+.p12 p {
+    text-align: center;
+    line-height: 2.2vw;
+    display: block;
+    color: green;
+
+}
+
+.links a {
+    color: white;
+    background-color: darkgreen;
+    border-radius: 8px;
+    margin-top: 6vw;
+    margin-left: 39vw;
+    width: 260px;
+    display: block;
+
+}
+
+#AC h1 {
+    color: green;
+    font-weight: normal;
+    display: block;
+    margin: 5vw 33vw 33vw 37.5vw;
+    font-size: 3.2vw;
+}
+
+
+#AC .billede5 {
+
+    max-width: 500px;
+
+    margin-top: 4vw;
+    margin-left: 32.5vw;
+    margin-right: 30vw;
+
+}
+
+#AC p {
+    display: block;
+    margin: 5vw;
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: lighter;
+    color: darkblue;
+
+}
+
+.p1 p {
+    display: block;
+
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: 400;
+    color: darkblue;
+    font-weight: 400;
+
+}
+
+.p2 p {
+    display: block;
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: 100;
+    color: darkblue;
+
+
+
+}
+
+#beskrivelse p {
+    color: rgb(75, 115, 247);
+    line-height: 2;
+    text-align: center;
+
+}
+
+.p7 p {
+    display: block;
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: 400;
+    color: rgb(75, 115, 247);
+    margin-top: -1vw;
+
+
+}
+
+.p8 p {
+    display: block;
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: 100;
+    color: rgb(75, 115, 247);
+    margin-bottom: 3vw;
+
+
 }
 
 
 
+#tekst h1 {
+    color: rgb(75, 115, 247);
+    display: block;
+    margin: 6vw 33vw 33vw 40vw;
+    font-size: 5.5vw;
+    font-family: 'Jua', sans-serif;
+}
+
+.tree {
+    margin-top: -30vw;
+    margin-left: 55vw;
+    margin-right: 2vw;
+}
+
+.baggrund {
+    margin-top: -47vw;
+    margin-left: 19vw;
+    margin-right: 50vw;
+
+}
+
+#beskrivelse p {
+    margin: 12vw 29vw;
+    margin-bottom: 5vw;
+
+}
+
+.knapper a {
+    color: #fdfdfd;
+    background-color: #fac7e5;
+    border-radius: 8px;
+    display: block;
+    margin: 0px auto;
+    width: 280px;
+}
+
+
+
+/*animation*/
+
+#ella_container {
+    position: absolute;
+    z-index: 98;
+}
+
+.ella_start {
+    top: 26vw;
+    left: -11vw;
+}
+
+
+.ella_move_in {
+    animation-name: ella_move_in_kf;
+    animation-duration: 7s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ella_move_in_kf {
+    from {
+        left: -30vw;
+    }
+
+    to {
+        left: 62vw;
+    }
+}
+
+
+.ella_still {
+    left: 30vw;
+}
+
+
+.ella_flyver_ind {
+
+
+    animation-name: ella_flyver_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ella_flyver_kf {
+
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: -400% 0%;
+    }
+
+}
+
+#ella_sprite {
+    width: 10vw;
+    height: 17vw;
+
+    background-image: url(animation_ella-02.svg);
+    background-size: 500% 500%;
+}
+
+#lilly_container {
+    position: absolute;
+}
+
+.lilly_start {
+    top: 32vw;
+    left: -20vw;
+}
+
+/* Flytte-animation: lilly kommer ind */
+
+.lilly_move_in {
+    animation-name: lilly_move_in_kf;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lilly_move_in_kf {
+    from {
+        left: -30vw;
+    }
+
+    to {
+        left: 56vw;
+    }
+}
+
+
+.lilly_still {
+    left: 20vw;
+}
+
+#lilly_sprite {
+    width: 10vw;
+    height: 23vw;
+
+    background-image: url(animation_lilly-02.svg);
+    background-size: 200% 200%;
+
+
+}
+
+.lilly_flyver_ind {
+
+
+    animation-name: lilly_flyver_kf;
+    animation-duration: 0.55s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes lilly_flyver_kf {
+
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: -200% 0%;
+    }
+
+
+}
+
+.hs-responsive-embed-youtube iframe {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    padding-top: 25px;
+}
+
+#cphdox .video {
+    display: block;
+    margin: -8vw 16vw 7vw 18vw;
+
+}
+
+#cphdox p {
+    text-align: center;
+    line-height: 2.5vw;
+}
+
+.p3 p {
+    text-align: center;
+    line-height: 2vw;
+    font-family: 'Jua', sans-serif;
+    font-weight: 400;
+
+}
+
+.p4 p {
+    text-align: center;
+    line-height: 2vw;
+
+}
+
+#redesign {}
+
+.knop a {
+    color: #fdfdfd;
+    background-color: #885202;
+    border-radius: 8px;
+    display: block;
+    margin: 40px auto;
+    width: 280px;
+
+}
+
+
+#redesign h1 {
+    color: #885202;
+    text-align: center;
+    margin: 5vw;
+
+}
+
+#redesign .splash {
+    display: block;
+    margin: 0vw 30vw 8vw 30vw;
+
+}
+
+
+#redesign p {
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: lighter;
+    color: saddlebrown;
+}
+
+.p5 p {
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: 400;
+    color: saddlebrown;
+    margin-top: 5vw;
+
+
+}
+
+.p6 p {
+    text-align: center;
+    line-height: 2.2vw;
+    color: saddlebrown;
+
+
+}
+
+#privatsnak h1 {
+    color: darkorange;
+    text-align: center;
+    font-weight: normal;
+    margin: 5vw;
+    font-size: 3em;
+}
+
+#privatsnak p {
+    text-align: center;
+    line-height: 2.2vw;
+    margin-top: 6vw;
+    display: block;
+    color: orange;
+}
+
+.p9 p {
+    text-align: center;
+    line-height: 2.2vw;
+    font-weight: 400;
+    display: block;
+    color: orange;
+    margin-top: 5vw;
+
+
+}
+
+.p10 p {
+    text-align: center;
+    line-height: 2.2vw;
+    display: block;
+    color: orange;
+    margin-bottom: -2vw;
+
+}
+
+
+#privatsnak .privat {
+    margin: 0vw 32vw;
+
+}
+
+.linkprivat a {
+    color: white;
+    background-color: orange;
+    border-radius: 8px;
+    display: block;
+    margin: 100px auto;
+    width: 301px;
+
+}
+
+
+.joeknap a {
+    color: white;
+    background-color: #fac7e5;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    width: 301px;
+
+}
+
+#joe p {
+    text-align: center;
+    line-height: 2.2vw;
+    margin-top: 6vw;
+    display: block;
+    color: #ff9adc
+}
+
+.tekst p {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 5vw;
+    display: block;
+    color: #ff9adc;
+
+}
+
+.p15 {
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 5vw;
+    margin-top: 2vw;
+    color: #ff9adc;
+
+}
+
+.knaparts a {
+    color: white;
+    background-color: #18138e;
+    border-radius: 8px;
+    display: block;
+    margin: 50px auto;
+    width: 190px;
+    font-size: 1.2em;
+
+}

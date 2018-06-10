@@ -4,10 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -23,11 +29,14 @@
 
             <li class="dropdown menuitem"><a href="#">Portfolio</a>
                 <ul class="dropdown-content">
-                    <li><a href="animation.html">Animation</a></li>
                     <li><a href="arts_and_crafts.html">Arts and Crafts</a></li>
                     <li><a href="cph_dox.html">CPH DOX - en dokumentar</a></li>
+                    <li><a href="redesign.html">Redesign - Snedkerfirmaer Soegaard</a></li>
+                    <li><a href="ellalilly.html">Animation - Spil</a></li>
+                    <li><a href="animation.html">Sex og Samfund - Privat snak</a></li>
                     <li><a href="kea_app.html">Kea App</a></li>
                     <li><a href="joe.html">Joe and the Juice</a></li>
+
                 </ul>
             </li>
 
@@ -41,29 +50,36 @@
         <img src="logo-01.png" alt="logo" class="logo">
 
     </div>
-
-    <!----- Sidens indhold ------>
-
-    <div class="indhold">
-
-        <div id="ommig">
-            <h3>Stefani Arsovic</h3>
-            <p>Velkommen til min hjemmeside. Her kan du finde mit CV og Portfolio med de ting jeg har lavet på 1 semester. </p>
-
-        </div>
-
-        <div id="slide">
-            <img class="autoslide" src="privat.png">
-            <img class="autoslide" src="joe.png">
-
-        </div>
-
-        <script src="java.js"></script>
-
-
+    <div class="example">
+        <h3>Stefani Arsovic</h3>
     </div>
 
 
+    <section id="om">
+
+
+
+        <div class="sectionwrapper">
+
+
+            <div class="column1">
+                <div id="example">
+                    <p>Velkommen til min hjemmeside. Her kan du finde mit CV og min portfolio med de ting, som jeg har lavet på første semester, som multimediedesign-studernede på KEA. </p>
+                </div>
+
+            </div>
+
+            <div class="column">
+                <div id="slide">
+                    <img class="autoslide" src="privat.png" alt="samfund">
+                    <img class="autoslide" src="joe.png" alt="joe">
+                    <img class="autoslide" src="keahelps.png" alt="kea">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <!-- footer -->
@@ -71,24 +87,22 @@
     <!-- indhold slut -->
 
 
-    <div class="bottom">
-        <a href="https://www.facebook.com/stefani.arsovic">
-                            <img src="facebooklogo.jpg" alt="faceebook logo">
-                        </a>
-        <a href="https://www.instagram.com/stefaniarsovic/">
-                        <img src="instalogo.jpg" alt="Instagram logo">
-        </a>
 
-    </div>
     <footer>
         <div class="footer">
-            <p>Dette site er lavet som et studieprojekt på KEA af Stefani Arsovic</p>
+            <a href="https://www.facebook.com/stefani.arsovic">
+                            <img src="facelogo.png" alt="faceebook logo">
+                        </a>
+            <a href="https://www.instagram.com/stefaniarsovic/">
+                        <img src="instalogo-01.png" alt="Instagram logo">
+        </a>
         </div>
     </footer>
 
 
     <!-- footer slut -->
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="java.js"></script>
 </body>
 
 </html>
